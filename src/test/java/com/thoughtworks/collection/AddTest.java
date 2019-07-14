@@ -80,15 +80,15 @@ public class AddTest {
 //        assertThat(add.getProcessedList(arrayList)).isEqualTo(resultList);
 //    }
 
-//    @Test
-//    public void should_return_median_of_even() {
-//        //求数组中所有偶数组成的数组的中位数
-//        Integer[] array = new Integer[]{1, 2, 3, 4, 5};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Add add = new Add();
-//        assertThat(add.getMedianOfEven(arrayList)).isEqualTo((double) 3);
-//    }
+    @Test
+    public void should_return_median_of_even() {
+        //求数组中所有偶数组成的数组的中位数
+        Integer[] array = new Integer[]{1, 2, 3, 4, 5};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Add add = new Add();
+        assertThat(add.getMedianOfEven(arrayList)).isEqualTo((double) 3);
+    }
 
     @Test
     public void should_return_average_of_even() {
@@ -128,17 +128,17 @@ public class AddTest {
         assertThat(add.getUnrepeatedFromEvenIndex(arrayList)).isEqualTo(resultList);
     }
 
-//    @Test
-//    public void should_sort_by_even_and_odd() {
-//        //排序数组 结果使数组偶数在递增在前，奇数递减在后
-//        Add add = new Add();
-//
-//        Integer[] array = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Integer[] result = new Integer[]{2, 4, 6, 8, 7, 5, 3, 1};
-//        List<Integer> resultList = Arrays.asList(result);
-//
-//        assertThat(add.sortByEvenAndOdd(arrayList)).isEqualTo(resultList);
-//    }
+    @Test
+    public void should_sort_by_even_and_odd() {
+        //排序数组 结果使数组偶数在递增在前，奇数递减在后
+        Add add = new Add();
+
+        Integer[] array = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Integer[] result = new Integer[]{2, 4, 6, 8, 7, 5, 3, 1};
+        List<Integer> resultList = Arrays.asList(result);
+
+        assertThat(add.sortByEvenAndOdd(arrayList)).isEqualTo(resultList);
+    }
 }
